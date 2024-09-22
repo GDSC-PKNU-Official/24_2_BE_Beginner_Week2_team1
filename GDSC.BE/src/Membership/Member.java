@@ -1,7 +1,7 @@
 package Membership;
-import Activities.Attachment;
-import Activities.Contribute;
-import Activities.Networking;
+import Property.Attachment;
+import Property.Contribute;
+import Property.Networking;
 
 class Member extends Membership implements Contribute, Networking, Attachment {
 
