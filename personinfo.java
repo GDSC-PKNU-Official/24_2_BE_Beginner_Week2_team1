@@ -1,16 +1,16 @@
 
-class Person {
+class PersonInformation{
     // 필드 (속성)
     public final String name;
     private int studentId;
-    private final int age;
+    private int age;
     private String email;
     private String phoneNumber;
     public String gitId;
     public String interestedField;
 
     // 생성자
-    public Person(String name, int studentId, int age, String email, String phoneNumber, String gitId, String interestedField) {
+    public PersonInformation(String name, int studentId, int age, String email, String phoneNumber, String gitId, String interestedField) {
         this.name = name;
         this.studentId = studentId;
         this.age = age;
