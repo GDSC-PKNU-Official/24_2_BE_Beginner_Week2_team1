@@ -1,9 +1,9 @@
 public abstract class Cloth {
     private String name;
-    private String material;
-    private String color;
-    private char size;
-    private int season;
+    private final String material;
+    private final String color;
+    private final char size;
+    private final int season;
     private boolean cleanliness;
 
     public Cloth(String name, String material, String color, Character size, Integer season, Boolean cleanliness) {
@@ -20,7 +20,12 @@ public abstract class Cloth {
         System.out.println("Material: " + material);
         System.out.println("Color: " + color);
         System.out.println("Size: " + size);
+
         System.out.println("Season: " + season);
-        System.out.println("Cleanliness: " + cleanliness);
+        System.out.println("Cleanliness: " + (cleanliness?"청결함":"더러움"));
+    }
+
+    public void changeClothName(String name) {
+        this.name = name;
     }
 }
