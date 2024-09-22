@@ -3,11 +3,11 @@ import Property.Attachment;
 import Property.Contribute;
 import Property.Networking;
 
-class Beginner extends Membership implements Contribute, Networking, Attachment {
+public class Beginner extends Membership implements Contribute, Networking, Attachment {
     protected String curriculum;
 
 
-    Beginner(String domain, String curriculum) {
+    public Beginner(String domain, String curriculum) {
         super(domain);
         this.curriculum = curriculum;
     }

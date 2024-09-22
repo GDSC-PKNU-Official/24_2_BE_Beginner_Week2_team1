@@ -3,10 +3,10 @@ import Property.Attachment;
 import Property.Contribute;
 import Property.Networking;
 
-class Coremember extends Membership implements Contribute, Networking, Attachment {
+public class Coremember extends Membership implements Contribute, Networking, Attachment {
     protected String department;
 
-    Coremember(String domain, String department) {
+    public Coremember(String domain, String department) {
         super(domain);
         this.department = department;
     }
