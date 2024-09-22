@@ -1,4 +1,4 @@
-package Activity;
+package GDSC.BE.src.Activity;
 
 public class Study extends Activity {
     public Study(String activity_name, String explanation) {

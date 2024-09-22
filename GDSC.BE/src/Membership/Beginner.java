@@ -1,4 +1,4 @@
-package Membership;
+package GDSC.BE.src.Membership;
 import Property.Attachment;
 import Property.Contribute;
 import Property.Networking;

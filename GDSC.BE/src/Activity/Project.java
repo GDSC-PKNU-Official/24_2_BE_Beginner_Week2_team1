@@ -1,4 +1,4 @@
-package Activity;
+package GDSC.BE.src.Activity;
 
 public class Project extends Activity {
     private String deadline;

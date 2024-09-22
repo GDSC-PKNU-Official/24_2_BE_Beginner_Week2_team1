@@ -1,4 +1,4 @@
-package Activity;
+package GDSC.BE.src.Activity;
 import java.util.ArrayList;
 import java.util.List;
 

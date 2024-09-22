@@ -1,4 +1,4 @@
-package Membership;
+package GDSC.BE.src.Membership;
 
 public abstract class Membership {
     String domain;

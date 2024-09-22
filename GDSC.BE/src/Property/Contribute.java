@@ -1,4 +1,4 @@
-package Property;
+package GDSC.BE.src.Property;
 
 public interface Contribute {
     void contribute();
