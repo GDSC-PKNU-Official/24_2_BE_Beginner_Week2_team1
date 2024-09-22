@@ -1,5 +1,4 @@
-
-class PersonInformation{
+class Information{
     // 필드 (속성)
     public final String name;
     private int studentId;
@@ -10,7 +9,7 @@ class PersonInformation{
     public String interestedField;
 
     // 생성자
-    public PersonInformation(String name, int studentId, int age, String email, String phoneNumber, String gitId, String interestedField) {
+    public Information(String name, int studentId, int age, String email, String phoneNumber, String gitId, String interestedField) {
         this.name = name;
         this.studentId = studentId;
         this.age = age;
@@ -43,7 +42,7 @@ class PersonInformation{
 
 
     // 인적 사항 출력
-    public void printPersonInfo() {
+    public void printInfo() {
         System.out.println("----------------------");
         System.out.println("Name: " + name);
         System.out.println("Student ID: " + studentId);
