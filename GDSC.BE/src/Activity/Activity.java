@@ -11,29 +11,29 @@ public abstract class Activity {
     protected Status status;
     private String activity_name;
     private String explanation;
-    private List<Person> members;
+    private List<String> members;
 
     public Activity(String activity_name, String explanation) {
         this.activity_name = activity_name;
         this.explanation = explanation;
-        this.members = new ArrayList<Person>();
+        this.members = new ArrayList<String>();
     }
 
     public String getActivity_name() {
         return activity_name;
     }
 
-    public void addMember(Person member){
+    public void addMember(String member){
         members.add(member);
-        System.out.println(member.getName() + " has been added to the list.");
+        System.out.println(member + " has been added to the list.");
     }
 
-    public void removeMember(Person member){
+    public void removeMember(String member){
         if(members.contains(member)){
             members.remove(member);
-            System.out.println(member.getName() + " has been removed from the list.");
+            System.out.println(member + " has been removed from the list.");
         } else{
-            System.out.println(member.getName() + " has not existed");
+            System.out.println(member + " has not existed");
 
         }
     }
@@ -43,8 +43,8 @@ public abstract class Activity {
             System.out.println(activity_name + "is empty");
         }
         else{
-            for(Person member : members){
-                System.out.println(member.getName() + ",");
+            for(String member : members){
+                System.out.println(member + ",");
             }
         }
     }
