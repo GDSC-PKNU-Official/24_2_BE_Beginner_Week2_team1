@@ -1,4 +1,4 @@
-public class Information{
+public class PersonalInformation{
     // 필드 (속성)
     public final String name;
     private int studentId;
@@ -9,7 +9,7 @@ public class Information{
     public String interestedField;
 
     // 생성자
-    public Information(String name, int studentId, int age, String email, String phoneNumber, String gitId, String interestedField) {
+    public PersonalInformation(String name, int studentId, int age, String email, String phoneNumber, String gitId, String interestedField) {
         this.name = name;
         this.studentId = studentId;
         this.age = age;
