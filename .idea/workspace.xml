@@ -5,14 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="298c1715-0687-4aed-90ff-c7758b8732dd" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/GDSC.BE/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Information.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Membership/Beginner.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Membership/Beginner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Membership/Coremember.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Membership/Coremember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Membership/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Membership/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Membership/Membership.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Membership/Membership.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Membership/Senior.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Membership/Senior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Activity/Activity$Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Activity/Activity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Activity/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Activity/Study.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Information.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Membership/Beginner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Membership/Coremember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Membership/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Membership/Membership.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Membership/Senior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Property/Attachment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Property/Contribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/production/24_2_BE_Beginner_Week2_team1/Property/Networking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDSC.BE/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/GDSC.BE/src/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "lhj",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/hyoji/24_2_BE_Beginner_Week2_team1",
@@ -84,7 +94,7 @@
       <workItem from="1727014675120" duration="106000" />
       <workItem from="1727014843235" duration="91000" />
       <workItem from="1727014977092" duration="1387000" />
-      <workItem from="1727022071168" duration="1090000" />
+      <workItem from="1727022071168" duration="2630000" />
     </task>
     <servers />
   </component>
