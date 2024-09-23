@@ -24,12 +24,12 @@ public class Main {
             }
 
             if(command.equals("member")){
-                ProgramManager.printPeopleList();
+                pm.printPeopleList();
                 continue;
             }
 
             if(command.equals("study")){
-                ProgramManager.printStudiesList();
+                pm.printStudiesList();
                 continue;
             }
 
