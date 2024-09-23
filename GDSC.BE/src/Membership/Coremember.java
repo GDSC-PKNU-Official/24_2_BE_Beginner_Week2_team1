@@ -22,4 +22,9 @@ public class Coremember extends GDSCMember {
     public void attach() {
         System.out.println("GDSC에 대한 애정을 갖고 함께 성장하는 커뮤니티를 만들어요.");
     }
+
+    @Override
+    public String getGrade() {
+        return "코어 멤버";
+    }
 }

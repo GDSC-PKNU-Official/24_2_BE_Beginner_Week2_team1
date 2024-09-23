@@ -10,4 +10,8 @@ public abstract class GDSCMember implements Attachment, Contribute, Networking {
     GDSCMember(String domain) {
         this.domain = domain;
     }
+
+    public String getGrade() {
+        return "";
+    }
 }

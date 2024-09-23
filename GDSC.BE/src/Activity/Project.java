@@ -12,7 +12,8 @@ public class Project extends Activity {
         return deadline;
     }
 
-    public void printProject() {
-        System.out.println(getActivityName() + ": " + getStatus() + "\n");
+    @Override
+    public void printActivityInformation() {
+        System.out.println("Project : " + getActivityName() + " : " + getStatus());
     }
 }

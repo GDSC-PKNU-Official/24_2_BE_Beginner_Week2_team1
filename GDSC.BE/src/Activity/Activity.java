@@ -21,6 +21,7 @@ public abstract class Activity {
 
 
     public Activity(String activityName, String explanation) {
+        this.status = Status.Gathering;
         this.activityName = activityName;
         this.explanation = explanation;
         this.members = new ArrayList<String>();
@@ -32,31 +33,31 @@ public abstract class Activity {
 
 
     public void addMember(String member) throws MemberAlreadyExistsException {
-       if(members.contains(member)){
-           throw new MemberAlreadyExistsException(member + "is already existed");
-        } else{
-           members.add(member);
-           System.out.println(member + " has been added to the list.");
-       }
+        if (members.contains(member)) {
+            throw new MemberAlreadyExistsException(member + "is already existed");
+        } else {
+            members.add(member);
+            System.out.println(member + " has been added to the list.");
+        }
 
     }
 
     public void removeMember(String member) throws MemberNotExistException {
-        if(members.contains(member)){
+        if (members.contains(member)) {
             members.remove(member);
             System.out.println(member + " has been removed from the list.");
-        } else{
+        } else {
             throw new MemberNotExistException(member + "is not existed");
 
         }
     }
 
-    public Optional<List<String>> showMembers(){
-        if(members.isEmpty()){
+    public Optional<List<String>> showMembers() {
+        if (members.isEmpty()) {
             System.out.println(activityName + "is empty");
             return Optional.empty();
-        } else{
-            for(String member : members){
+        } else {
+            for (String member : members) {
 
                 System.out.println(member + ",");
             }
@@ -71,5 +72,9 @@ public abstract class Activity {
 
     public Status getStatus() {
         return status;
+    }
+
+    public void printActivityInformation() {
+        System.out.println("informaion");
     }
 }

@@ -21,4 +21,8 @@ public class Senior extends GDSCMember {
         System.out.println("GDSC에 대한 애정으로 오랜 기간 활동하며 기여해주고 있어요.");
     }
 
+    @Override
+    public String getGrade() {
+        return "시니어";
+    }
 }

@@ -23,4 +23,9 @@ public class Beginner extends GDSCMember {
     public void attach() {
         System.out.println("GDSC의 새싹들! 활발한 활동과 개발에 대한 열정으로 함께해요.");
     }
+
+    @Override
+    public String getGrade() {
+        return "비기너";
+    }
 }
