@@ -1,5 +1,5 @@
-import Membership.Membership;
 import Activity.Activity;
+import Membership.Membership;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class Person {
     private Membership membership;
     private Activity activity;
 
-    private ArrayList<Person> memberList=new ArrayList<>();
+    private final ArrayList<Person> memberList = new ArrayList<>();
 
     public Person(PersonalInformation information, Membership membership, Activity activity) {
         this.information = information;

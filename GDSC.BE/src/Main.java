@@ -2,49 +2,42 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ProgramManager pm = new ProgramManager();
-        System.out.println("Welcome to GDSC PKNU!");
-        System.out.println("\n\nChoose an option:");
-        System.out.println("member: Show Member List");
-        System.out.println("study: Show Study List");
-        System.out.println("project: Show Project List");
-        System.out.println("info: Show Community Information");
-        System.out.println("event: Show Event List");
-        System.out.println("exit: Exit Program\n\n");
+        CommandHelper commandHelper = new CommandHelper();
+        System.out.println(InitialInformation.GREETING);
 
-        while(true){
+        while (true) {
             Scanner sc = new Scanner(System.in);
             System.out.print("$");
 
 
             String command = sc.nextLine();
 
-            if(command.equals("exit")){
+            if (command.equals("exit")) {
                 break;
             }
 
-            if(command.equals("member")){
-                ProgramManager.printPeopleList();
+            if (command.equals("member")) {
+                commandHelper.printPeopleList();
                 continue;
             }
 
-            if(command.equals("study")){
-                ProgramManager.printStudiesList();
+            if (command.equals("study")) {
+                commandHelper.printStudiesList();
                 continue;
             }
 
-            if(command.equals("project")){
-                pm.printProjectsList();
+            if (command.equals("project")) {
+                commandHelper.printProjectsList();
                 continue;
             }
 
-            if(command.equals("info")){
-                pm.printCommunityInformation();
+            if (command.equals("info")) {
+                commandHelper.printCommunityInformation();
                 continue;
             }
 
-            if(command.equals("event")){
-                pm.printEventsList();
+            if (command.equals("event")) {
+                commandHelper.printEventsList();
                 continue;
             }
 

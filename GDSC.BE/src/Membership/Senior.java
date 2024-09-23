@@ -1,11 +1,12 @@
 package Membership;
+
 import Property.Attachment;
 import Property.Contribute;
 import Property.Networking;
 
 public class Senior extends Membership implements Contribute, Networking, Attachment {
 
-    public Senior(String domain){
+    public Senior(String domain) {
         super(domain);
     }
 

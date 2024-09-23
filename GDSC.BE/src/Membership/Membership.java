@@ -8,6 +8,8 @@ public abstract class Membership {
     }
 
     public abstract void contribute();
+
     public abstract void networking();
+
     public abstract void attach();
 }

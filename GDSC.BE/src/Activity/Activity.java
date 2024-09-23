@@ -1,4 +1,5 @@
 package Activity;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +12,7 @@ public abstract class Activity {
         Ongoing,
         Completed
     }
+
     protected Status status;
     private String activityName;
     private String explanation;
@@ -25,6 +27,7 @@ public abstract class Activity {
     public String getActivityName() {
         return activityName;
     }
+
 
     public void addMember(String member) throws MemberAlreadyExistsException {
        if(members.contains(member)){
@@ -52,6 +55,7 @@ public abstract class Activity {
             return Optional.empty();
         } else{
             for(String member : members){
+
                 System.out.println(member + ",");
             }
             return Optional.of(members);
