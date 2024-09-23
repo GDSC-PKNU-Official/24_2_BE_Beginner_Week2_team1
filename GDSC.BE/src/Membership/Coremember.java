@@ -1,10 +1,6 @@
 package Membership;
 
-import Property.Attachment;
-import Property.Contribute;
-import Property.Networking;
-
-public class Coremember extends Membership implements Contribute, Networking, Attachment {
+public class Coremember extends GDSCMember {
     protected String department;
 
     public Coremember(String domain, String department) {

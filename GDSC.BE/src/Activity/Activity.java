@@ -1,10 +1,11 @@
 package Activity;
 
+import Exception.MemberAlreadyExistsException;
+import Exception.MemberNotExistException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
-import Exception.*;
 
 public abstract class Activity {
     enum Status {
@@ -14,9 +15,10 @@ public abstract class Activity {
     }
 
     protected Status status;
-    private String activityName;
-    private String explanation;
-    private List<String> members;
+    private final String activityName;
+    private final String explanation;
+    private final List<String> members;
+
 
     public Activity(String activityName, String explanation) {
         this.activityName = activityName;

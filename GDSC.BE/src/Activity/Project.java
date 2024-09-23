@@ -13,6 +13,6 @@ public class Project extends Activity {
     }
 
     public void printProject() {
-        System.out.println(getActivity_name() + ": " + getStatus() + "\n");
+        System.out.println(getActivityName() + ": " + getStatus() + "\n");
     }
 }

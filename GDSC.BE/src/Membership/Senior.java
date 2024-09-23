@@ -1,10 +1,6 @@
 package Membership;
 
-import Property.Attachment;
-import Property.Contribute;
-import Property.Networking;
-
-public class Senior extends Membership implements Contribute, Networking, Attachment {
+public class Senior extends GDSCMember {
 
     public Senior(String domain) {
         super(domain);

@@ -7,6 +7,6 @@ public class Study extends Activity {
     }
 
     public void printStudy() {
-        System.out.println(getActivity_name() + ": " + getStatus() + "\n");
+        System.out.println(getActivityName() + ": " + getStatus() + "\n");
     }
 }
