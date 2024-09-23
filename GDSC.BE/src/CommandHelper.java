@@ -43,7 +43,7 @@ public class CommandHelper {
 
     public void printCommunityInformation() {
         System.out.println("소속 인원: " + people.size() + "명");
-        System.out.println("계획된 행사: " + events.size() + "명");
+        System.out.println("계획된 행사: " + events.size() + "개");
     }
 
 }
