@@ -18,7 +18,6 @@ public class MemberData {
 
     private void displayMembers() {
         addSampleData();
-        System.out.println("Member List:");
         for (String member : members) {
             System.out.println(member);
         }
