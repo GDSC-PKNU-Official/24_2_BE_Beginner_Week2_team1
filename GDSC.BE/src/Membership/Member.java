@@ -1,10 +1,6 @@
 package Membership;
 
-import Property.Attachment;
-import Property.Contribute;
-import Property.Networking;
-
-public class Member extends Membership implements Contribute, Networking, Attachment {
+public class Member extends GDSCMember {
 
     public Member(String domain) {
         super(domain);
@@ -24,5 +20,4 @@ public class Member extends Membership implements Contribute, Networking, Attach
     public void attach() {
         System.out.println("다양한 사람들과 함께 성장하며 활동해요.");
     }
-
 }

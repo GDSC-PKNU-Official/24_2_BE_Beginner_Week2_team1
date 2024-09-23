@@ -1,10 +1,6 @@
 package Membership;
 
-import Property.Attachment;
-import Property.Contribute;
-import Property.Networking;
-
-public class Beginner extends Membership implements Contribute, Networking, Attachment {
+public class Beginner extends GDSCMember {
     protected String curriculum;
 
 

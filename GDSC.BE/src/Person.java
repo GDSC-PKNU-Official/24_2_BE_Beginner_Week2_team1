@@ -1,19 +1,18 @@
 import Activity.Activity;
-import Membership.Membership;
+import Membership.GDSCMember;
 
 import java.util.ArrayList;
 
 public class Person {
     private PersonalInformation information;
-    private Membership membership;
+    private GDSCMember GDSCMember;
     private Activity activity;
 
     private final ArrayList<Person> memberList = new ArrayList<>();
 
-    public Person(PersonalInformation information, Membership membership, Activity activity) {
+    public Person(PersonalInformation information, GDSCMember GDSCMember) {
         this.information = information;
-        this.membership = membership;
-        this.activity = activity;
+        this.GDSCMember = GDSCMember;
     }
 
     public PersonalInformation getInformation() {
@@ -24,12 +23,12 @@ public class Person {
         this.information = information;
     }
 
-    public Membership getMembership() {
-        return membership;
+    public GDSCMember getMembership() {
+        return GDSCMember;
     }
 
-    public void setMembership(Membership membership) {
-        this.membership = membership;
+    public void setMembership(GDSCMember GDSCMember) {
+        this.GDSCMember = GDSCMember;
     }
 
     public Activity getActivity() {
@@ -43,7 +42,7 @@ public class Person {
     public void printPersonInfo() {
         printBasicInfo();
         printMembershipInfo();
-        printActivityInfo();
+//        printActivityInfo();
     }
 
     private void printBasicInfo() {
@@ -53,14 +52,14 @@ public class Person {
 
     private void printMembershipInfo() {
         System.out.println("📈회원 구분:");
-        membership.contribute();
-        membership.networking();
-        membership.attach();
+        GDSCMember.contribute();
+        GDSCMember.networking();
+        GDSCMember.attach();
     }
 
-    private void printActivityInfo() {
-        System.out.println("🎯활동 내역:");
-        System.out.println("참여 활동 상태: " + activity.getStatus());
-        activity.showMembers();
-    }
+//    private void printActivityInfo() {
+//        System.out.println("🎯활동 내역:");
+//        System.out.println("참여 활동 상태: " + activity.getStatus());
+//        activity.showMembers();
+//    }
 }
