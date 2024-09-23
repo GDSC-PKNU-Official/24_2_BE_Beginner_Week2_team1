@@ -2,21 +2,21 @@ import Membership.Membership;
 import Activity.Activity;
 
 public class Person {
-    private Information information;
+    private PersonalInformation information;
     private Membership membership;
     private Activity activity;
 
-    public Person(Information information, Membership membership, Activity activity) {
+    public Person(PersonalInformation information, Membership membership, Activity activity) {
         this.information = information;
         this.membership = membership;
         this.activity = activity;
     }
 
-    public Information getInformation() {
+    public PersonalInformation getInformation() {
         return information;
     }
 
-    public void setInformation(Information information) {
+    public void setInformation(PersonalInformation information) {
         this.information = information;
     }
 
