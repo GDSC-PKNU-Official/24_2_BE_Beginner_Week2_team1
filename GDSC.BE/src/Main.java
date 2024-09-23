@@ -1,10 +1,8 @@
-import Activity.*;
-import Membership.*;
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        ProgramManager pm = new ProgramManager();
         System.out.println("Welcome to GDSC PKNU!");
         System.out.println("\n\nChoose an option:");
         System.out.println("member: Show Member List");
@@ -15,9 +13,10 @@ public class Main {
         System.out.println("exit: Exit Program\n\n");
 
         while(true){
-            System.out.println("$");
-
             Scanner sc = new Scanner(System.in);
+            System.out.print("$");
+
+
             String command = sc.nextLine();
 
             if(command.equals("exit")){
@@ -35,21 +34,21 @@ public class Main {
             }
 
             if(command.equals("project")){
-                ProgramManager.printProjectsList();
+                pm.printProjectsList();
                 continue;
             }
 
             if(command.equals("info")){
-                ProgramManager.printCommunityInformation();
+                pm.printCommunityInformation();
                 continue;
             }
 
             if(command.equals("event")){
-                ProgramManager.printEventsList();
+                pm.printEventsList();
                 continue;
             }
 
-            System.out.println("Wrong input, try again.\n");
+            System.out.println("Wrong input, try again.");
 
         }
 
