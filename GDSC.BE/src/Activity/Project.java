@@ -11,4 +11,8 @@ public class Project extends Activity {
     public String getDeadline() {
         return deadline;
     }
+
+    public void printProject() {
+        System.out.println(getActivity_name()+": "+getStatus()+"\n");
+    }
 }
