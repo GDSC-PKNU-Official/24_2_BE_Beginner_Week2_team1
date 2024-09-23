@@ -6,7 +6,8 @@ public class Study extends Activity {
         super(activity_name, explanation);
     }
 
-    public void printStudy() {
-        System.out.println(getActivityName() + ": " + getStatus() + "\n");
+    @Override
+    public void printActivityInformation() {
+        System.out.println("Study : " + getActivityName() + " : " + getStatus() + "\n");
     }
 }

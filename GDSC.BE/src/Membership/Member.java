@@ -20,4 +20,9 @@ public class Member extends GDSCMember {
     public void attach() {
         System.out.println("다양한 사람들과 함께 성장하며 활동해요.");
     }
+
+    @Override
+    public String getGrade() {
+        return "멤버";
+    }
 }
