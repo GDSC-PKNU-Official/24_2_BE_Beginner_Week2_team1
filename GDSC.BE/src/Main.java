@@ -5,38 +5,38 @@ public class Main {
         CommandHelper commandHelper = new CommandHelper();
         System.out.println(InitialInformation.GREETING);
 
-        while(true){
+        while (true) {
             Scanner sc = new Scanner(System.in);
             System.out.print("$");
 
 
             String command = sc.nextLine();
 
-            if(command.equals("exit")){
+            if (command.equals("exit")) {
                 break;
             }
 
-            if(command.equals("member")){
+            if (command.equals("member")) {
                 commandHelper.printPeopleList();
                 continue;
             }
 
-            if(command.equals("study")){
+            if (command.equals("study")) {
                 commandHelper.printStudiesList();
                 continue;
             }
 
-            if(command.equals("project")){
+            if (command.equals("project")) {
                 commandHelper.printProjectsList();
                 continue;
             }
 
-            if(command.equals("info")){
+            if (command.equals("info")) {
                 commandHelper.printCommunityInformation();
                 continue;
             }
 
-            if(command.equals("event")){
+            if (command.equals("event")) {
                 commandHelper.printEventsList();
                 continue;
             }

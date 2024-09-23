@@ -1,8 +1,8 @@
-public class PersonalInformation{
+public class PersonalInformation {
     // 필드 (속성)
     public final String name;
-    private int studentId;
-    private int age;
+    private final int studentId;
+    private final int age;
     private String email;
     private String phoneNumber;
     public String gitId;

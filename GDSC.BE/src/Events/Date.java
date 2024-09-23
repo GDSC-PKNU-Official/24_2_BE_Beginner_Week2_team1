@@ -7,7 +7,8 @@ public class Date {
     private int hour;
     private int minute;
 
-    public Date() {}
+    public Date() {
+    }
 
     public Date(int year, int month, int day, int hour, int minute) {
         this.year = year;
@@ -17,10 +18,9 @@ public class Date {
         this.minute = minute;
     }
 
-    public void printDate(){
+    public void printDate() {
         System.out.println(month + "월 " + day + "일 " + hour + ":" + minute);
     }
-
 
 
 }
