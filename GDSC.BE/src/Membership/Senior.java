@@ -3,9 +3,9 @@ import Property.Attachment;
 import Property.Contribute;
 import Property.Networking;
 
-class Senior extends Membership implements Contribute, Networking, Attachment {
+public class Senior extends Membership implements Contribute, Networking, Attachment {
 
-    Senior(String domain){
+    public Senior(String domain){
         super(domain);
     }
 

@@ -1,4 +1,4 @@
-class Information{
+public class Information{
     // 필드 (속성)
     public final String name;
     private int studentId;
