@@ -1,12 +1,14 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 
 
 public class PersonalInformation<K, V>{
     // 필드 (속성)
     public final String name;
     public String department;
-    public String major;
+    public Optional<String> major = Optional.empty();
     public Map<K, V> additionalInfo;
 
 
@@ -15,9 +17,15 @@ public class PersonalInformation<K, V>{
     public PersonalInformation(String name, String department, String major) {
         this.name = name;
         this.department = department;
-        this.major = major;
+        this.major = Optional.of(major);
         this.additionalInfo = new HashMap<>();
 
+    }
+
+    public PersonalInformation(String name, String department) {
+        this.name = name;
+        this.department = department;
+        this.additionalInfo = new HashMap<>();
     }
 
 
@@ -29,10 +37,13 @@ public class PersonalInformation<K, V>{
 
     // 인적 사항 출력
     public void printInfo() {
-        System.out.println("----------------------");
-        System.out.println("Name: " + name);
-        System.out.println("Department: " + department);
-        System.out.println("Major: " + major);
+        try {
+            System.out.println("Name: " + name);
+            System.out.println("Department: " + department);
+            System.out.println("Major: " + major.orElseThrow(() -> new NoSuchElementException()));
+        } catch (NoSuchElementException e) {
+            System.out.println("Major: 미등록된 정보");
+        }
 
         // 추가적인 정보 출력
         if (!additionalInfo.isEmpty()) {

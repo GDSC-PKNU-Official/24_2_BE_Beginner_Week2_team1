@@ -4,6 +4,8 @@ import Events.Date;
 import Events.Events;
 import Membership.Beginner;
 import Membership.Coremember;
+import Membership.Member;
+import Membership.Senior;
 
 import java.util.ArrayList;
 
@@ -45,11 +47,11 @@ public class CommandHelper {
     private void addPeople() {
         Person p1 = new Person(new PersonalInformation("김서영", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Coremember("임베디드", "커뮤니티 매니징"));
         people.add(p1);
-        Person p2 = new Person(new PersonalInformation("조원준","전자정보통신공학부" , "미정"), new Beginner("백엔드","백엔드"));
+        Person p2 = new Person(new PersonalInformation("조원준","전자정보통신공학부"), new Beginner("백엔드","백엔드"));
         people.add(p2);
-        Person p3 = new Person(new PersonalInformation("김규남", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Coremember("백엔드", "백엔드"));
+        Person p3 = new Person(new PersonalInformation("김규남", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Member("백엔드"));
         people.add(p3);
-        Person p4 = new Person(new PersonalInformation("이효진", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Coremember("백엔드", "백엔드"));
+        Person p4 = new Person(new PersonalInformation("이효진", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Senior("백엔드"));
         people.add(p4);
     }
 
