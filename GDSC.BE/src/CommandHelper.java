@@ -4,7 +4,7 @@ import Events.Events;
 
 import java.util.ArrayList;
 
-public class ProgramManager {
+public class CommandHelper {
     private final ArrayList<Person> people=new ArrayList<>();
     private final ArrayList<Project> projects=new ArrayList<>();
     private final ArrayList<Study> studies=new ArrayList<>();

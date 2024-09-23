@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ProgramManager pm = new ProgramManager();
+        CommandHelper commandHelper = new CommandHelper();
         System.out.println(InitialInformation.GREETING);
 
         while(true){
@@ -17,27 +17,27 @@ public class Main {
             }
 
             if(command.equals("member")){
-                pm.printPeopleList();
+                commandHelper.printPeopleList();
                 continue;
             }
 
             if(command.equals("study")){
-                pm.printStudiesList();
+                commandHelper.printStudiesList();
                 continue;
             }
 
             if(command.equals("project")){
-                pm.printProjectsList();
+                commandHelper.printProjectsList();
                 continue;
             }
 
             if(command.equals("info")){
-                pm.printCommunityInformation();
+                commandHelper.printCommunityInformation();
                 continue;
             }
 
             if(command.equals("event")){
-                pm.printEventsList();
+                commandHelper.printEventsList();
                 continue;
             }
 
