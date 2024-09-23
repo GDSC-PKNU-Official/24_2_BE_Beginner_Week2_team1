@@ -7,7 +7,7 @@ public class Events {
     private String subject;
     private String place;
 
-    ArrayList<Events> eventsList=new ArrayList<>();
+    private ArrayList<Events> eventsList=new ArrayList<>();
 
     public Events(Date date, String subject, String place) {
         this.date = date;
@@ -22,9 +22,7 @@ public class Events {
         System.out.println("장소: "+place);
     }
 
-    public void printEventList(){
-        for(Events event:eventsList){
-            System.out.println(event.eventName);
-        }
+    public String getEventName() {
+        return eventName;
     }
 }

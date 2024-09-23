@@ -1,10 +1,14 @@
 import Membership.Membership;
 import Activity.Activity;
 
+import java.util.ArrayList;
+
 public class Person {
     private PersonalInformation information;
     private Membership membership;
     private Activity activity;
+
+    private ArrayList<Person> memberList=new ArrayList<>();
 
     public Person(PersonalInformation information, Membership membership, Activity activity) {
         this.information = information;
