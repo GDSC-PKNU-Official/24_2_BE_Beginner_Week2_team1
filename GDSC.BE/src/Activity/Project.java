@@ -14,6 +14,6 @@ public class Project extends Activity {
 
     @Override
     public void printActivityInformation() {
-        System.out.println("Project : " + getActivityName() + " : " + getStatus());
+        System.out.println(getActivityName() + " : " + getStatus());
     }
 }

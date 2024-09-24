@@ -8,6 +8,6 @@ public class Study extends Activity {
 
     @Override
     public void printActivityInformation() {
-        System.out.println("Study : " + getActivityName() + " : " + getStatus() + "\n");
+        System.out.println(getActivityName() + " : " + getStatus() + "\n");
     }
 }

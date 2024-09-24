@@ -66,7 +66,9 @@ public class CommandHelper {
         a4.add(pj1);
         a4.add(pj2);
 
-        Person p1 = new Person(new PersonalInformation("김서영", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Coremember("임베디드", "커뮤니티 매니징"), a1);
+        PersonalInformation pi=new PersonalInformation("김서영", "컴퓨터인공지능공학부", "컴퓨터공학전공");
+        pi.addAdditionalInfo("Github ID", "Cloie-Kim");
+        Person p1 = new Person(pi, new Coremember("임베디드", "커뮤니티 매니징"), a1);
         people.add(p1);
         Person p2 = new Person(new PersonalInformation("조원준", "전자정보통신공학부"), new Beginner("백엔드", "백엔드"), a2);
         people.add(p2);
@@ -74,6 +76,8 @@ public class CommandHelper {
         people.add(p3);
         Person p4 = new Person(new PersonalInformation("이효진", "컴퓨터인공지능공학부", "컴퓨터공학전공"), new Senior("백엔드"), a4);
         people.add(p4);
+
+
     }
 
     public void printPeopleList() {
@@ -110,6 +114,9 @@ public class CommandHelper {
     public void printCommunityInformation() {
         System.out.println("소속 인원: " + people.size() + "명");
         System.out.println("계획된 행사: " + events.size() + "개");
+        System.out.println("개설된 프로젝트: " + projects.size() + "개");
+        System.out.println("개설된 스터디: " + studies.size() + "개");
+        System.out.print("\n");
     }
 
 }

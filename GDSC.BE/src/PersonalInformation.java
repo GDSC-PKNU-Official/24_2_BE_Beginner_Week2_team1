@@ -4,13 +4,12 @@ import java.util.NoSuchElementException;
 import java.util.Optional;
 
 
-public class PersonalInformation<K, V>{
+public class PersonalInformation<K, V> {
     // 필드 (속성)
     public final String name;
     public String department;
     public Optional<String> major = Optional.empty();
     public Map<K, V> additionalInfo;
-
 
 
     // 생성자
@@ -27,7 +26,6 @@ public class PersonalInformation<K, V>{
         this.department = department;
         this.additionalInfo = new HashMap<>();
     }
-
 
     // 추가적인 정보를 추가할 수 있는 메서드
     public void addAdditionalInfo(K key, V value) {
@@ -54,5 +52,5 @@ public class PersonalInformation<K, V>{
         }
     }
 
-    }
+}
 
