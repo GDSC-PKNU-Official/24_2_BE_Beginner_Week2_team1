@@ -30,6 +30,10 @@ public abstract class Activity {
         return activityName;
     }
 
+    public String getExplanation() {
+        return explanation;
+    }
+
 
     public void addMember(String member) throws MemberAlreadyExistsException {
         if (members.contains(member)) {
@@ -72,5 +76,9 @@ public abstract class Activity {
 
     public void printActivityInformation() {
         System.out.println("informaion");
+    }
+
+    public void printActivityDetails() {
+        System.out.println("Details");
     }
 }

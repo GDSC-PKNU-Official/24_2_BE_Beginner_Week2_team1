@@ -8,6 +8,8 @@ public class InitialInformation {
             study: Show Study List
             project: Show Project List
             event: Show Event List
+            update: Update Activity Member
+            details: Show Activity Details
             exit: Exit Program
             """;
 }
