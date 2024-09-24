@@ -10,4 +10,11 @@ public class Study extends Activity {
     public void printActivityInformation() {
         System.out.println(getActivityName() + " : " + getStatus() + "\n");
     }
+
+    @Override
+    public void printActivityDetails(){
+        System.out.println("Activity: " + getActivityName());
+        System.out.println("Explanation: " + getExplanation());
+        System.out.println("Status: " + getStatus());
+    }
 }

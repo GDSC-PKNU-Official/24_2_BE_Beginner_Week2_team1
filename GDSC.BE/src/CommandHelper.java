@@ -1,4 +1,5 @@
 import Activity.Activity;
+import Activity.ActivityMemberManager;
 import Activity.Project;
 import Activity.Study;
 import Events.Date;
@@ -9,7 +10,7 @@ import Membership.Member;
 import Membership.Senior;
 
 import java.util.ArrayList;
-import java.util.Formattable;
+import java.util.Scanner;
 
 public class CommandHelper {
 
@@ -17,6 +18,7 @@ public class CommandHelper {
     private final ArrayList<Project> projects = new ArrayList<>();
     private final ArrayList<Study> studies = new ArrayList<>();
     private final ArrayList<Events> events = new ArrayList<>();
+    ActivityMemberManager activityMemberManager = new ActivityMemberManager();
 
     public CommandHelper() {
         addPeople();
@@ -67,7 +69,7 @@ public class CommandHelper {
         a4.add(pj1);
         a4.add(pj2);
 
-        PersonalInformation pi=new PersonalInformation("김서영", "컴퓨터인공지능공학부", "컴퓨터공학전공");
+        PersonalInformation pi = new PersonalInformation("김서영", "컴퓨터인공지능공학부", "컴퓨터공학전공");
         pi.addAdditionalInfo("Github ID", "Cloie-Kim");
         Person p1 = new Person(pi, new Coremember("임베디드", "커뮤니티 매니징"), a1);
         people.add(p1);
@@ -110,6 +112,23 @@ public class CommandHelper {
         System.out.print("\n");
     }
 
+    public void printActivityDetails() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("어떤 활동의 상세 정보를 조회하시겠습니까?");
+        String ActivityName = sc.nextLine();
+        Activity selectedActivity = getProjectByName(ActivityName);
+        if (selectedActivity == null) {
+            selectedActivity = getStudyByName(ActivityName);
+        }
+        if (selectedActivity != null) {
+            selectedActivity.printActivityDetails();
+            selectedActivity.showMembers();
+        } else {
+            System.out.println("해당 이름을 가진 활동은 존재하지 않습니다.");
+            printActivityDetails();
+        }
+    }
+
     public void printEventsList() {
         System.out.println("<모든 이벤트 목록>");
         for (Events event : events) {
@@ -125,10 +144,10 @@ public class CommandHelper {
         System.out.print("\n");
     }
 
-    // Study, Project 객체 getter
+
     public Study getStudyByName(String studyName) {
         for (Study study : studies) {
-            if(study.getActivityName().equals(studyName)) {
+            if (study.getActivityName().equals(studyName)) {
                 return study;
             }
         }
@@ -137,10 +156,24 @@ public class CommandHelper {
 
     public Project getProjectByName(String projectName) {
         for (Project project : projects) {
-            if(project.getActivityName().equals(projectName)) {
+            if (project.getActivityName().equals(projectName)) {
                 return project;
             }
         }
         return null;
+    }
+
+    public void updateActivityMember() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("어떤 활동의 멤버를 업데이트 할까요?");
+        String projectName = sc.nextLine();
+        Project selectedProject = getProjectByName(projectName);
+
+        if (selectedProject != null) {
+            activityMemberManager.manageActivityManger(sc, selectedProject);
+        } else {
+            System.out.println("해당 이름을 가진 활동은 존재하지 않습니다.");
+            updateActivityMember();
+        }
     }
 }

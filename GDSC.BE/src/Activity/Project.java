@@ -8,12 +8,16 @@ public class Project extends Activity {
         this.deadline = deadline;
     }
 
-    public String getDeadline() {
-        return deadline;
-    }
-
     @Override
     public void printActivityInformation() {
         System.out.println(getActivityName() + " : " + getStatus());
+    }
+
+    @Override
+    public void printActivityDetails() {
+        System.out.println("Activity: " + getActivityName());
+        System.out.println("Explanation: " + getExplanation());
+        System.out.println("Deadline: " + deadline);
+        System.out.println("Status: " + getStatus());
     }
 }

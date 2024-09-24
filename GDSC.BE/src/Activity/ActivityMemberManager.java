@@ -6,7 +6,7 @@ import Exception.MemberNotExistException;
 import java.util.Scanner;
 
 public class ActivityMemberManager {
-    public void manageActivityManger(Scanner sc, Activity activity){
+    public void manageActivityManger(Scanner sc, Activity activity) {
         String choice;
 
         while (true) {
@@ -25,13 +25,13 @@ public class ActivityMemberManager {
         System.out.println("멤버 이름을 입력해주세요");
         String memberName = sc.nextLine();
 
-        try{
-            if(choice.equals("1")){
+        try {
+            if (choice.equals("1")) {
                 activity.addMember(memberName);
-            }else if(choice.equals("2")){
+            } else if (choice.equals("2")) {
                 activity.removeMember(memberName);
             }
-        } catch (MemberAlreadyExistsException | MemberNotExistException e){
+        } catch (MemberAlreadyExistsException | MemberNotExistException e) {
             System.out.println(e.getMessage());
         }
     }
