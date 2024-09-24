@@ -5,7 +5,6 @@ import Exception.MemberNotExistException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public abstract class Activity {
     enum Status {
@@ -52,16 +51,13 @@ public abstract class Activity {
         }
     }
 
-    public Optional<List<String>> showMembers() {
+    public void showMembers() {
         if (members.isEmpty()) {
-            System.out.println(activityName + "is empty");
-            return Optional.empty();
-        } else {
-            for (String member : members) {
-
-                System.out.println(member + ",");
-            }
-            return Optional.of(members);
+            System.out.println(activityName + "는 현재 아무도 가입하지 않았습니다.");
+            return;
+        }
+        for (String member : members) {
+            System.out.println(member + ",");
         }
     }
 
