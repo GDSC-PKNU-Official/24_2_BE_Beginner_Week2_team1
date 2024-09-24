@@ -8,41 +8,10 @@ public class Person {
     private GDSCMember GDSCMember;
     private ArrayList<Activity> joinedActivities = new ArrayList<>();
 
-    private final ArrayList<Person> memberList = new ArrayList<>();
-
-    public Person(PersonalInformation information, GDSCMember GDSCMember) {
-        this.information = information;
-        this.GDSCMember = GDSCMember;
-    }
-
     public Person(PersonalInformation information, GDSCMember GDSCMember, ArrayList<Activity> activities) {
         this.information = information;
         this.GDSCMember = GDSCMember;
         this.joinedActivities = activities;
-    }
-
-    public PersonalInformation getInformation() {
-        return information;
-    }
-
-    public void setInformation(PersonalInformation information) {
-        this.information = information;
-    }
-
-    public GDSCMember getMembership() {
-        return GDSCMember;
-    }
-
-    public void setMembership(GDSCMember GDSCMember) {
-        this.GDSCMember = GDSCMember;
-    }
-
-    public ArrayList<Activity> getJoinedActivityList() {
-        return joinedActivities;
-    }
-
-    public void addActivity(Activity activity) {
-        joinedActivities.add(activity);
     }
 
     public void printPersonInfo() {

@@ -8,8 +8,6 @@ public class Events {
     private final String subject;
     private final String place;
 
-    private final ArrayList<Events> eventsList = new ArrayList<>();
-
     public Events(String eventName, Date date, String subject, String place) {
         this.eventName = eventName;
         this.date = date;
@@ -23,9 +21,5 @@ public class Events {
         this.date.printDate();
         System.out.println("장소: " + place);
         System.out.print("\n");
-    }
-
-    public String getEventName() {
-        return eventName;
     }
 }
