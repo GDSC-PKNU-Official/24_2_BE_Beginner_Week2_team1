@@ -9,6 +9,7 @@ import Membership.Member;
 import Membership.Senior;
 
 import java.util.ArrayList;
+import java.util.Formattable;
 
 public class CommandHelper {
 
@@ -85,7 +86,7 @@ public class CommandHelper {
         for (Person person : people) {
             System.out.print("\n");
             person.printPersonInfo();
-            System.out.println("----------");
+            System.out.println("----------------");
         }
     }
 
@@ -93,13 +94,18 @@ public class CommandHelper {
         System.out.println("<개설된 스터디 목록>");
         for (Study study : studies) {
             study.printActivityInformation();
+            study.showMembers();
+            System.out.println("----------------");
         }
+        System.out.print("\n");
     }
 
     public void printProjectsList() {
         System.out.println("<개설된 프로젝트 목록>");
         for (Project project : projects) {
             project.printActivityInformation();
+            project.showMembers();
+            System.out.println("----------------");
         }
         System.out.print("\n");
     }
@@ -119,4 +125,22 @@ public class CommandHelper {
         System.out.print("\n");
     }
 
+    // Study, Project 객체 getter
+    public Study getStudyByName(String studyName) {
+        for (Study study : studies) {
+            if(study.getActivityName().equals(studyName)) {
+                return study;
+            }
+        }
+        return null;
+    }
+
+    public Project getProjectByName(String projectName) {
+        for (Project project : projects) {
+            if(project.getActivityName().equals(projectName)) {
+                return project;
+            }
+        }
+        return null;
+    }
 }
