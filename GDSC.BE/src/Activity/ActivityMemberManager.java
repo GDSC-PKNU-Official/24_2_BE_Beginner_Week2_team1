@@ -15,7 +15,6 @@ public class ActivityMemberManager {
 
             choice = sc.nextLine();
 
-            // "1" 또는 "2"를 입력했을 때만 반복문 탈출
             if (choice.equals("1") || choice.equals("2")) {
                 break;
             } else {
